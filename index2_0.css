@@ -1,0 +1,149 @@
+
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+
+}
+
+
+.container-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input + .checkmark {
+  background-color: red;
+}
+input:checked + .checkmark {
+  background-color: #2196F3;
+}
+
+.container-1, .container-2 {
+  display: flex;
+  align-content: flex-end;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-collapse: separate;
+  border-spacing:10px 20px;
+}
+
+.container-1 div, .container-2 div {
+  padding: 10px;
+  border: 1px solid silver;
+ 
+}
+
+.box-1{
+  flex-grow: 1;
+  background-color:green; /* Цвет фона */
+  color: black; /* Цвет текста */
+  margin: 20px;
+}
+
+.box-2{
+    flex-grow: 1;
+    background-color: yellow; /* Цвет фона */
+    color: black; /* Цвет текста */
+    margin: 20px;
+}
+
+.box-3{
+    flex-grow: 1;
+    background-color: yellow; /* Цвет фона */
+    color: black; /* Цвет текста */
+    margin: 20px;
+}
+
+.box-4{
+    flex-grow: 1;
+    background-color: yellow; /* Цвет фона */
+    color: black; /* Цвет текста */
+    margin: 20px;
+}
+
+.box-5{
+    flex-grow: 1;
+    background-color: yellow; /* Цвет фона */
+    color: black; /* Цвет текста */
+    margin: 20px;
+}
+
+.box-6{
+    flex-grow: 1;
+    background-color: yellow; /* Цвет фона */
+    color: black; /* Цвет текста */
+    margin: 20px;
+}
+
+.box-7{
+    flex-grow: 1;
+    background-color: yellow; /* Цвет фона */
+    color: black; /* Цвет текста */
+    margin: 20px;
+}
+
+.box-8{
+    flex-grow: 2;
+    background-color: yellow; /* Цвет фона */
+    color: black; /* Цвет текста */
+    margin: 20px;
+}
+
+
+
+
+.box-9{
+  flex-grow: 1;
+  background-color: green; /* Цвет фона */
+  color: black; /* Цвет текста */
+  margin: 20px;
+}
